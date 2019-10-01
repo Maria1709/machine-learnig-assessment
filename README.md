@@ -1,1 +1,1 @@
-# machine-learnig-assessment
+# Machine-Learning-Assessment
