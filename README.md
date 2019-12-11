@@ -38,4 +38,21 @@ The features 'RM', 'LSTAT', 'PTRATIO', and 'MDEV' are essential. The remaining n
 The feature 'MDEV' has been multiplicatively scaled to account for 35 years of market inflation.
 
 ## Describe
-We are asked to descibe the data set, we do this by
+
+We are asked to descibe the data set, we do this by:
+
+## Take a look at the datset keys
+
+ We can see the dataset has a number of keys which correspond to the data, target, features and a description.
+ Then we take a look at each of the keys in turn starting with a description of the dataset
+ We can see the various data points which are contained in the dataset. We aslo take a look at the feature names and the shape of the data set. The data set contains 506 rows and 13 columns
+
+## Check the data set for any null values
+
+We can see there are no blank fields in the dataset which may effect the statistics
+We then take a look at the first 5 rows of data and the last 5 rows of data from the dataset.
+
+## We can see there is no Price column as this is contained in the target variable
+Lets add the column to the dataset
+df['MEDV'] = boston.target
+print(df.head())
