@@ -56,3 +56,13 @@ We then take a look at the first 5 rows of data and the last 5 rows of data from
 Lets add the column to the dataset
 df['MEDV'] = boston.target
 print(df.head())
+
+## We then look at the maximum and the minimum price.
+Max 50.0 Min 5.0
+
+## Lets plot some of the statistic contained in the data set
+The median value of properties is normally distributed except for a few outliers represented by the bell shaped curve. 
+
+![Image description](https://miro.medium.com/max/866/1*1pVtTg-mmUbGRTkuXeTvkQ.png)
+
+
