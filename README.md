@@ -1,5 +1,10 @@
 # Machine-Learning-Assessment
 
+![Image description](https://ei.marketwatch.com/Multimedia/2016/10/12/Photos/ZH/MW-EX709_boston_20161012163949_ZH.jpg?uuid=053d9e12-90bc-11e6-9a13-00137241c023)
+
+
+
+
 ## This project applies basic machine learning concepts on data collected for housing prices in the Boston, Massachusetts area to predict the selling price of a new home.
 
 ## Software and Libraries
