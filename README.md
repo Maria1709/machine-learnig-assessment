@@ -36,3 +36,6 @@ This dataset that is used for this project was taken from the UCI Machine Learni
 1 data point has an 'RM' value of 8.78. This data point can be considered an outlier and has been removed.
 The features 'RM', 'LSTAT', 'PTRATIO', and 'MDEV' are essential. The remaining non-relevant features have been excluded.
 The feature 'MDEV' has been multiplicatively scaled to account for 35 years of market inflation.
+
+## Describe
+We are asked to descibe the data set, we do this by
