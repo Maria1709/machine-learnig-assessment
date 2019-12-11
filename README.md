@@ -7,10 +7,17 @@
 This project uses the following software and Python libraries:
 
 Python 3.7
+
 NumPy
+
 Pandas
+
 Scikit-learn
+
 oS
+
 Seaborn
+
 Scipy.stats
+
 Matplotlib.pyplot
