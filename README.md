@@ -118,4 +118,4 @@ plt.plot(MEDV, 'r--', CHAS, 'gs', RM, 'g^')
 
 # INFER
 
-![Image description](https://miro.medium.com/max/518/1*PyTZ8L1OLeIAa1HxjK_m5w.png)
+![Image description](http://onlinelifestyle.co/wp-content/uploads/2018/12/map-of-neighborhoods-boston-massachusetts.jpg)
