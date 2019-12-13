@@ -94,4 +94,4 @@ scatter_kws={'alpha': 0.4})
 sns.regplot('LSTAT', 'MEDV', df, ax=ax[1],
 scatter_kws={'alpha': 0.4}) 
 
-![Image description](https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwjwtrzX_LLmAhW-UhUIHXBaB1oQjRx6BAgBEAQ&url=https%3A%2F%2Fmedium.com%2F%40harimittapalli%2Fexploratory-data-analysis-iris-dataset-9920ea439a3e&psig=AOvVaw0ZjsnRbb944cxYBogR8dDZ&ust=1576338404663013)
+![Image description](https://miro.medium.com/max/801/1*zTIzocO1D2zi1r5gIuMi5Q.png)
