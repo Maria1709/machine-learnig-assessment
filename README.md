@@ -66,7 +66,7 @@ The median value of properties is normally distributed except for a few outliers
 ![Image description](https://miro.medium.com/max/866/1*1pVtTg-mmUbGRTkuXeTvkQ.png)
 
 
-# Lets create a subset of data to make plotting graphs more legible
+## Lets create a subset of data to make plotting graphs more legible
 
 CRIM per capita cime rate by town
 RM average number of rooms per dwelling
@@ -74,7 +74,8 @@ B proportion of blacks by town
 MEDV median value of owner ooccupied homes
 
 cols = ['CRIM', 'RM', 'B', 'MEDV', 'LSTAT']
-# First five columns and headings
+
+## First five columns and headings
 
 CRIM	RM	B	MEDV	LSTAT
 0	0.00632	6.575	396.90	24.0	4.98
@@ -86,7 +87,7 @@ CRIM	RM	B	MEDV	LSTAT
 
 # WE NOW START PLOTTING SOME DATA
 
-# Lets compare the house prices against some of the subset of features
+## Lets compare the house prices against some of the subset of features
 
 fig, ax = plt.subplots(1, 2)
 sns.regplot('RM', 'MEDV', df, ax=ax[0],
@@ -95,13 +96,13 @@ sns.regplot('LSTAT', 'MEDV', df, ax=ax[1],
 scatter_kws={'alpha': 0.4}) 
 
 
-# RM and MEDV have the closest shape to normal distributions.
+## RM and MEDV have the closest shape to normal distributions.
 b: AGE is skewed to the left and LSTAT is skewed to the right (this may seem counter intuitive but skew is defined in terms of where the mean is positioned in relation to the max).
 c: For TAX, we find a large amount of the distribution is around 700. This is also evident from the scatter plots
 
 ![Image description](https://static.packt-cdn.com/products/9781789804744/graphics/37fa1155-b42e-4755-b859-5b12df9784fd.png)
 
-# Lets compare the house prices against some of the subset of features
+## Lets compare the house prices against some of the subset of features
 
 fig, ax = plt.subplots(1, 2)
 sns.regplot('CRIM', 'MEDV', df, ax=ax[0],
@@ -109,7 +110,7 @@ scatter_kws={'alpha': 0.4})
 sns.regplot('B', 'MEDV', df, ax=ax[1],
 scatter_kws={'alpha': 0.4})
 
-# Plot multiple data points
+## Plot multiple data points
 
 CHAS = df.CHAS.values
 MEDV = df.MEDV.values
@@ -127,7 +128,7 @@ df.corr()
 
 
 
-# CRIM	ZN	INDUS	CHAS	NOX	RM	AGE	DIS	RAD	TAX	PTRATIO	B	LSTAT	MEDV
+### CRIM	ZN	INDUS	CHAS	NOX	RM	AGE	DIS	RAD	TAX	PTRATIO	B	LSTAT	MEDV
 
 CRIM	1.000000	-0.200469	0.406583	-0.055892	0.420972	-0.219247	0.352734	-0.379670	0.625505	0.582764	0.289946	-0.385064	0.455621	-0.388305
 ZN	-0.200469	1.000000	-0.533828	-0.042697	-0.516604	0.311991	-0.569537	0.664408	-0.311948	-0.314563	-0.391679	0.175520	-0.412995	0.360445
@@ -144,25 +145,25 @@ B	-0.385064	0.175520	-0.356977	0.048788	-0.380051	0.128069	-0.273534	0.291512	-0
 LSTAT	0.455621	-0.412995	0.603800	-0.053929	0.590879	-0.613808	0.602339	-0.496996	0.488676	0.543993	0.374044	-0.366087	1.000000	-0.737663
 MEDV	-0.388305	0.360445	-0.483725	0.175260	-0.427321	0.695360	-0.376955	0.249929	-0.381626	-0.468536	-0.507787	0.333461	-0.737663	1.000000
 
-# We can visually display these correlations in a heatmap
-# Again we can see the color code indicatinf no strong positive or negative correlation between the data points
+## We can visually display these correlations in a heatmap
+## Again we can see the color code indicatinf no strong positive or negative correlation between the data points
 hm = sns.heatmap(df.corr())
 
 ![Image description](https://miro.medium.com/max/518/1*PyTZ8L1OLeIAa1HxjK_m5w.png)
 
-# lets take a look at he pair plots for these data points. 
+## lets take a look at he pair plots for these data points. 
 cols = ['CHAS', 'MEDV']
 
-# PLotting the values on a line graph looks a bit messy. We would expect to see a more linear output if there was a direct correlation
-# Plotting house values for property which borders the Charles river and those which do not seperately might make the output clearer
-# given the CHAS has a value of 0 or 1
+## PLotting the values on a line graph looks a bit messy. We would expect to see a more linear output if there was a direct correlation
+## Plotting house values for property which borders the Charles river and those which do not seperately might make the output clearer
+## given the CHAS has a value of 0 or 1
 
 CHAS = df.CHAS.values
 MEDV = df.MEDV.values
 plt.plot(CHAS, MEDV)
 
-# Check if the data looks like our plot
-# here we can see a majority of houses do not border the Charles Riveer ie (0) value
+## Check if the data looks like our plot
+## here we can see a majority of houses do not border the Charles Riveer ie (0) value
 
 array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
@@ -194,14 +195,14 @@ array([0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.,
        0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0., 0.])
-# lets select all property which borders the river and lets view all the property which does not border the Charles River
+## lets select all property which borders the river and lets view all the property which does not border the Charles River
 
-# Lets plot the data points on a graph
-# We have a larger set of data points which do not border the Charles River indicated in black
+## Lets plot the data points on a graph
+## We have a larger set of data points which do not border the Charles River indicated in black
 plt.plot(x1, 'r^', y1, 'k.')
 
 
-#The mean value of properties bordering the Charles River is:
+## The mean value of properties bordering the Charles River is:
 28.439999999999998
 
 # T- TEST
@@ -223,7 +224,7 @@ ws.ttest_ind(x1, y1)
 
 # KERAS
 
-# Create our model with 13 inputs and a single output 
+## Create our model with 13 inputs and a single output 
 
 m = kr.models.Sequential()
 m.add(kr.layers.Dense(10, input_dim= 13, activation="linear"))
