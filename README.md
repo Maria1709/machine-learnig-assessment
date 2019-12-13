@@ -66,3 +66,30 @@ The median value of properties is normally distributed except for a few outliers
 ![Image description](https://miro.medium.com/max/866/1*1pVtTg-mmUbGRTkuXeTvkQ.png)
 
 
+# Lets create a subset of data to make plotting graphs more legible
+
+CRIM per capita cime rate by town
+RM average number of rooms per dwelling
+B proportion of blacks by town
+MEDV median value of owner ooccupied homes
+
+cols = ['CRIM', 'RM', 'B', 'MEDV', 'LSTAT']
+# First five columns and headings
+
+CRIM	RM	B	MEDV	LSTAT
+0	0.00632	6.575	396.90	24.0	4.98
+1	0.02731	6.421	396.90	21.6	9.14
+2	0.02729	7.185	392.83	34.7	4.03
+3	0.03237	6.998	394.63	33.4	2.94
+4	0.06905	7.147	396.90	36.2	5.33
+
+
+# WE NOW START PLOTTING SOME DATA
+
+# Lets compare the house prices against some of the subset of features
+
+fig, ax = plt.subplots(1, 2)
+sns.regplot('RM', 'MEDV', df, ax=ax[0],
+scatter_kws={'alpha': 0.4})
+sns.regplot('LSTAT', 'MEDV', df, ax=ax[1],
+scatter_kws={'alpha': 0.4}) 
