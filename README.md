@@ -234,3 +234,19 @@ m.add(kr.layers.Dense(1, activation="linear"))
 
 ## We the predict inputs and outputs
 
+
+## Building and training
+
+We can see the model is performing quite poorly at the moment with a loss of approx 40. Lets alter the activation function, number of neurons, number of layers in the model to try to improve the loss
+
+## Scaling
+
+We can see that Scaling our dataset has drastically improved our model with loss reduced to approx 1 and our evaluation score also reduced
+
+
+## Whitening
+
+We will use whitening to remove the correlations between the variables
+We can see that whitening also helps to reduce the loss of our model
+
+# END
