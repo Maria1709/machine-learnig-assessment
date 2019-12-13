@@ -100,3 +100,13 @@ b: AGE is skewed to the left and LSTAT is skewed to the right (this may seem cou
 c: For TAX, we find a large amount of the distribution is around 700. This is also evident from the scatter plots
 
 ![Image description](https://static.packt-cdn.com/products/9781789804744/graphics/37fa1155-b42e-4755-b859-5b12df9784fd.png)
+
+# Lets compare the house prices against some of the subset of features
+
+fig, ax = plt.subplots(1, 2)
+sns.regplot('CRIM', 'MEDV', df, ax=ax[0],
+scatter_kws={'alpha': 0.4})
+sns.regplot('B', 'MEDV', df, ax=ax[1],
+scatter_kws={'alpha': 0.4})
+
+![Image description](plot 1.png)
