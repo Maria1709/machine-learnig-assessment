@@ -221,4 +221,15 @@ ws.ttest_ind(x1, y1)
 
 # T - TESTING USING ANOVA
 
+# KERAS
+
+# Create our model with 13 inputs and a single output 
+
+m = kr.models.Sequential()
+m.add(kr.layers.Dense(10, input_dim= 13, activation="linear"))
+m.add(kr.layers.Dense(10, activation="linear"))
+m.add(kr.layers.Dense(1, activation="linear"))
+
+
+## We the predict inputs and outputs
 
