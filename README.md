@@ -109,4 +109,13 @@ scatter_kws={'alpha': 0.4})
 sns.regplot('B', 'MEDV', df, ax=ax[1],
 scatter_kws={'alpha': 0.4})
 
-![Image description](plot 1.png)
+# Plot multiple data points
+
+CHAS = df.CHAS.values
+MEDV = df.MEDV.values
+RM = df.RM.values
+plt.plot(MEDV, 'r--', CHAS, 'gs', RM, 'g^')
+
+# INFER
+
+![Image description](https://miro.medium.com/max/518/1*PyTZ8L1OLeIAa1HxjK_m5w.png)
