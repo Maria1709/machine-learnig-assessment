@@ -214,7 +214,11 @@ ws.ttest_ind(x1, y1)
 
 (3.9964374660905095, 7.390623170519883e-05, 504.0)
 
-# Distribution plot of house values bordering the Charles River
+## Distribution plot of house values bordering the Charles River
 
 
-# Distribution plot of house values which do not border the Charles river
+## Distribution plot of house values which do not border the Charles river
+
+# T - TESTING USING ANOVA
+
+
