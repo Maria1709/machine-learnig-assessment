@@ -94,4 +94,9 @@ scatter_kws={'alpha': 0.4})
 sns.regplot('LSTAT', 'MEDV', df, ax=ax[1],
 scatter_kws={'alpha': 0.4}) 
 
+
+# RM and MEDV have the closest shape to normal distributions.
+b: AGE is skewed to the left and LSTAT is skewed to the right (this may seem counter intuitive but skew is defined in terms of where the mean is positioned in relation to the max).
+c: For TAX, we find a large amount of the distribution is around 700. This is also evident from the scatter plots
+
 ![Image description](https://static.packt-cdn.com/products/9781789804744/graphics/37fa1155-b42e-4755-b859-5b12df9784fd.png)
